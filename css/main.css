@@ -204,7 +204,8 @@
     display: block;
     position: absolute;
     right: 13%;
-    font-size: 1.4vw;
+    font-size: 18px;
+    font-weight: bold;
     padding: 1% 2%;
     background-color: beige;
 }
@@ -227,41 +228,12 @@
     margin: auto;
 }   
 
-.promo-inner::after{
-    content: "";
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    scale: 0.3;
-    top: 250px;
-    left: 150px;
-    cursor: pointer;
-    background-image: url("../images/left_preview.png");
-}
-
-.promo-inner::before{
-    content: "";
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    scale: 0.3;
-    top: 250px;
-    right: 150px;
-    cursor: pointer;
-    background-image: url("../images/right_privew.png");
-}
-
-
 .promo-slide{
     /* width: 100%;
     height: 100%;
     background-color: cadetblue;
     display: flex; */
     /* overflow: hidden; */
-}
-
-.promo-items{
-  
 }
 
 .promo-items a{
@@ -286,12 +258,31 @@
     height: 493px;
 }
 
-.swiper-button-next, .swiper-button-prev{
-    color: #ffffff;
-    background: rgba(0,0,0,0.3);
-    border-radius: 50%;
-    padding: 30px;
-    font-weight: bold;
+.swiper-button-prev{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    scale: 0.3;
+    color: transparent;
+    top: 220px;
+    left: -50px;
+    cursor: pointer;
+    background-image: url("../images/left_preview.png");
+
+}
+
+.swiper-button-next{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    scale: 0.3;
+    color: transparent;
+    top: 220px;
+    right: -50px;
+    cursor: pointer;
+    background-image: url("../images/right_privew.png");
 }
 
 
@@ -307,6 +298,8 @@
     gap: 20px;
     background-color: aliceblue;
 }
+
+
 
 .service-wrap img{
     width: 343px;
@@ -328,9 +321,14 @@
     padding: 17px;
 }
 
-.service-wrap a{
+.line-change1, .line-change2{
+    display: none;
+}
+
+.gift-bg{
     position: relative;
     width: 50%;
+    height: auto;
     background-color: #fff;
     box-shadow: 0 0 8px #bdbdbd;
     text-align: center;
@@ -351,12 +349,16 @@
     background: url("../images/gift_lmg.png");
 }
 
-.membership-area{
+.membership-bg{
     position: relative;
     width: 50%;
+    height: auto;
     background-color: #80a4db;
     box-shadow: 0 0 8px #bdbdbd;
     text-align: center;
+}
+.membership-area{
+    width: 100%;
 }
 
 .membership-area::after{

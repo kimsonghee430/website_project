@@ -1,4 +1,52 @@
 @charset "utf-8";
+
+
+@media screen and (max-width : 1700px){
+    .gift-area::after, .membership-area::after{
+        scale: 0.2;
+    }
+   .service-wrap .textbox p{
+        font-size: 20px;
+    }
+
+    
+}
+
+@media screen and (max-width : 1457px){
+    /* .footer-right ul{
+        width: 350px;
+    } */
+    .footer-right ul{
+        flex-wrap: wrap;
+        justify-content: flex-end;
+}
+.copyright{
+    text-align: right;
+}
+}
+
+@media screen and (max-width : 1393px){
+
+    .line-change1, .line-change2{
+        display: block;
+    }
+
+    .gift-area::after {
+        top: -26px;
+        right: -190px;
+        /* scale: 0.12; */
+    }
+    
+    
+    .membership-area::after{
+        top: 16px;
+        left: -162px;
+        /* scale: 0.12; */
+    }
+
+
+
+
 @media screen and (max-width : 1200px) {
     .promo-textbox p{
     
@@ -15,7 +63,50 @@
         font-size: 22px;
         line-height: 1.5;
     }
-   
+
+    /* 서비스 구역 */
+    .service-wrap img {
+        width: 200px;
+        height: auto;
+    }
+    .service-wrap .textbox h3 {
+        font-size: 22px;
+    }
+    
+
+    .service-wrap .textbox p{
+        font-size: 16px;
+    }
+
+    .gift-area::after {
+        scale: 0.12;
+        top: -26px;
+        right: -190px;
+        /* top: -17px;
+        right: -12px; */
+    }
+    .membership-area::after{
+        scale: 0.12;
+        top: 16px;
+        left: -162px;
+        /* top: 26px;
+        left: 16px; */
+        
+    }
+    .line-change1{
+        display: none;
+    }
+
+    .footer-left p{
+        width: 450px;
+        height: 130px;
+        white-space: wrap;
+        font-size: 16px;
+    }
+
+
+}
+
 }
 @media screen and (max-width : 894px) {
     .promo-textbox p{
@@ -27,11 +118,60 @@
     }
 }
 
-
-@media screen and (max-width : 1155px) {
-    .swiper-slide {
-        width: 300px;
-
-
+@media screen and (max-width : 768px){
+     /* 서비스 구역 */
+     .service-wrap img {
+        width: 160px;
+        height: auto;
     }
+
+
+
+    .service-wrap .textbox h3 {
+        font-size: 18px;
+    }
+    
+
+    .service-wrap .textbox p{
+        font-size: 13px;
+    }
+
+    .gift-area::after {
+        scale: 0.12;
+        top: -26px;
+        right: -190px;
+        /* top: -17px;
+        right: -12px; */
+    }
+    .membership-area::after{
+        scale: 0.12;
+        top: 16px;
+        left: -162px;
+        /* top: 26px;
+        left: 16px; */
+        
+    }
+    .line-change1,.line-change2{
+        display: none;
+    }
+
+    .footer-left p{
+        width: 380px;
+        height: 120px;
+        white-space: wrap;
+        font-size: 12px;
+    }
+    .footer-right ul li a{
+        font-size: 12px;
+    }
+    .footer-icons a{
+        margin-left: 10px;
+    }
+
+    .footer-icons a img{
+        width: 27px;
+        height: auto;
+    }
+    .copyright{
+        font-size: 12px;
 }
