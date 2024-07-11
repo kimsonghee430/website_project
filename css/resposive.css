@@ -65,10 +65,17 @@
     }
 
     /* 서비스 구역 */
+    .service-wrap{
+        width: 100%;
+        height: 200px;
+    }
+    
     .service-wrap img {
         width: 200px;
         height: auto;
     }
+
+
     .service-wrap .textbox h3 {
         font-size: 22px;
     }
@@ -80,19 +87,20 @@
 
     .gift-area::after {
         scale: 0.12;
-        top: -26px;
-        right: -190px;
+        top: -52px;
+        right: -211px;
         /* top: -17px;
         right: -12px; */
     }
     .membership-area::after{
         scale: 0.12;
-        top: 16px;
-        left: -162px;
+        top: -13px;
+        left: -178px;
         /* top: 26px;
         left: 16px; */
         
     }
+
     .line-change1{
         display: none;
     }
@@ -119,13 +127,29 @@
 }
 
 @media screen and (max-width : 768px){
-     /* 서비스 구역 */
+    /* 프로모션 메인탑 텍스트박스 */
+    .promo-textbox p{
+        font-size: 18px;
+    }
+    .promo-textbox h3{
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .promo-top > a{
+        font-size: 16px;
+        right: 8%;
+    }
+    
+    
+    /* 서비스 구역 */
+     .service-wrap{
+        width: 100%;
+        height: 150px;
+    }
      .service-wrap img {
         width: 160px;
         height: auto;
     }
-
-
 
     .service-wrap .textbox h3 {
         font-size: 18px;
@@ -137,16 +161,16 @@
     }
 
     .gift-area::after {
-        scale: 0.12;
-        top: -26px;
-        right: -190px;
+        scale: 0.10;
+        top: -173px;
+        right: -216px;
         /* top: -17px;
         right: -12px; */
     }
     .membership-area::after{
-        scale: 0.12;
-        top: 16px;
-        left: -162px;
+        scale: 0.10;
+        top: -137px;
+        left: -182px;
         /* top: 26px;
         left: 16px; */
         
@@ -161,6 +185,21 @@
         white-space: wrap;
         font-size: 12px;
     }
+    /* .footer-right{
+        line-height: 1.2;
+    } */
+    .footer-right ul li{
+        padding: 0 7px;
+    }
+    .footer-right ul li a::after{
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 16px;
+        top: 0px;
+        left: -7px;
+        background-color: #333;
+    }
     .footer-right ul li a{
         font-size: 12px;
     }
@@ -174,4 +213,164 @@
     }
     .copyright{
         font-size: 12px;
+    }
+}
+
+@media screen and (max-width : 768px){
+    /* 헤더 네비 */
+    .head-menu a{
+        padding: 15% 10%;
+    }
+}
+
+@media screen and (max-width : 700px){
+    /* 프로모션 탑 텍스트 */
+    .promo-main{
+        position: relative;
+        height: 500px;
+        /* background-color: blue; */
+        /* flex-direction: column;
+        align-items: center; */
+    }
+    .promo-textbox{
+        width: 50%;
+        height: 70%;
+        position: absolute;
+        top: 16px;
+        left: 78px;
+    }
+
+    .promo-main > a {
+        position: absolute;
+        top: 130px;
+        right: 60px;
+    }
+    .promo-top > a {
+        display: none;
+    }
+
+    .promo-textbox p{
+        font-size: 16px;
+    }
+    .promo-textbox h3{
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+}
+
+
+
+@media screen and (max-width : 668px){
+
+    .service-wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer{
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width : 640px){
+    
+    .header{
+        height: 140px;
+    }
+    .header-inner{
+        /* height: 0; */
+        padding-top: 30px;
+    }
+    .header-inner img{
+        width: 80%;
+        height: auto;
+    }
+    .head-menu a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width : 562px){
+    .promo-textbox{
+        width: 50%;
+        height: 60%;
+    }
+
+    .promo-textbox p{
+        font-size: 14px;
+    }
+    .promo-textbox h3{
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width : 500px){
+    .promo-textbox p{
+        font-size: 13px;
+    }
+    .promo-textbox h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width : 460px){
+    .header{
+        height: 100px;
+    }
+    .header-inner{
+        flex-direction: row;
+    }
+    .header-inner > a{
+        margin: 0;
+    }
+
+    .icons{
+        display: flex;
+        align-items: center;
+        /* background-color: aqua; */
+        width: 100px;
+        height: 30px;
+        margin-top: 10px;
+    }
+    .icons a img{
+        width: 100%;
+    }
+    .navi{
+        display: none;
+    }
+}
+@media screen and (max-width : 400px){
+.promo-textbox{
+    width: 50%;
+    height: 40%;
+    }
+}
+@media screen and (max-width : 320px){
+    .header{
+        height: 55px;
+    }
+    .header-inner{
+
+        padding-top: 10px;
+    }
+
+    .header-inner > a{
+        padding-top: 5px;
+        width: 180px;
+    }
+    .icons{
+        padding-bottom:12px ;
+    }
+
+    /* #head-logo{
+        width: 147px;
+        height: auto;
+    
+    }
+    #head-logo img{
+        width: 100%;
+    } */
 }

@@ -24,6 +24,7 @@
     height: 200px;
     display: fixed;
     position: relative;
+    z-index: 999;
     box-shadow: 0 5px 5px -5px #686868;
     /* background-color: aqua; */
 }
@@ -51,6 +52,17 @@
     mix-blend-mode: multiply;
     display: block;
     margin: auto;
+}
+.icons{
+    display: none;
+    
+}
+.icons a{
+    padding: 7px;
+}
+.icons a img {
+    width: 20px;
+    height: auto;
 }
 
 .navi{
@@ -338,6 +350,7 @@
     width: 100%;
 }
 
+
 .gift-area::after{
     content: "";
     position: absolute;
@@ -426,6 +439,7 @@
 .footer-right ul li a{
     position: relative;
     font-size: 20px;
+    /* padding: 10px; */
     font-family: 'Times New Roman', Times, serif;
 }
 .footer-right ul li a::after{
