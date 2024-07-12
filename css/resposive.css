@@ -221,13 +221,16 @@
     .head-menu a{
         padding: 15% 10%;
     }
+    .top_img{
+        width: 70%;
+    }
 }
 
 @media screen and (max-width : 700px){
     /* 프로모션 탑 텍스트 */
     .promo-main{
         position: relative;
-        height: 500px;
+        height: 630px;
         /* background-color: blue; */
         /* flex-direction: column;
         align-items: center; */
@@ -238,6 +241,15 @@
         position: absolute;
         top: 16px;
         left: 78px;
+    }
+
+    #main-span{
+        display: block;
+        background-color: antiquewhite;
+        padding: 3px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
     }
 
     .promo-main > a {
@@ -256,6 +268,10 @@
         font-size: 24px;
         margin-bottom: 18px;
     }
+
+    .promo-bottom{
+        margin-top: 30px;
+
 }
 
 
@@ -263,11 +279,24 @@
 @media screen and (max-width : 668px){
 
     .service-wrap{
+        width: 100%;
+        height: auto;
+        max-width: 1210px;
+        margin: 30px auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
     }
+
+    .service-wrap > a {
+        width: 90%;
+    }
+    .gift-area::after {
+        left: -216px;
+    }
+
     .footer{
         margin-top: 60px;
     }
@@ -291,7 +320,38 @@
     }
 }
 
+@media screen and (max-width : 600px){
+    .footer{
+        height: auto;
+        padding-bottom: 20px;
+        white-space: wrap;
+    }
+
+    .footer-inner{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .footer-right {
+        align-items: center;
+        gap: 15px;
+    }
+    .footer-right ul {
+        justify-content: center;
+    }
+    .footer-right ul li{
+        /* margin-top: 10px; */
+    }
+}
+
+
+
 @media screen and (max-width : 562px){
+
+    .promo-main{
+        height: 540px;
+    }
+
     .promo-textbox{
         width: 50%;
         height: 60%;
@@ -304,6 +364,10 @@
         font-size: 22px;
         margin-bottom: 15px;
     }
+
+    #main-span{
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width : 500px){
@@ -313,6 +377,13 @@
     .promo-textbox h3{
         font-size: 20px;
         margin-bottom: 10px;
+    }
+    .promo-main{
+        height: 500px;
+    }
+
+    #main-span{
+        font-size: 15px;
     }
 }
 
@@ -327,6 +398,24 @@
         margin: 0;
     }
 
+    .promo-main{
+        height: 450px;
+    }
+
+    .promo-textbox{
+        width: 60%;
+        height: 65%;
+    }
+    .promo-main > a{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    #main-span{
+        width: 100%;
+        font-size: 14px;
+        text-align: left;
+    }
     .icons{
         display: flex;
         align-items: center;
@@ -338,16 +427,85 @@
     .icons a img{
         width: 100%;
     }
+    .footer-left img{
+        width: 134px;
+        height: auto;
+    }
+
     .navi{
         display: none;
     }
 }
-@media screen and (max-width : 400px){
-.promo-textbox{
-    width: 50%;
-    height: 40%;
+
+@media screen and (max-width : 420px){
+    .footer{
+        /* width: 300px;
+        white-space: wrap;
+        height: 400px; */
+    }
+    .footer-left p{
+        width: 300px;
+    }
+
+    .footer-right ul{
+        width: 300px;
     }
 }
+
+@media screen and (max-width : 400px){
+    .promo-textbox{
+        width: 60%;
+        height: 70%;
+        left: 50px;
+    }
+
+    .promo-main{
+        height: 430px;
+    }
+
+}
+
+@media screen and (max-width : 360px){
+    .service-wrap .textbox p{
+        display: none;
+    }
+    .service-wrap .textbox{
+        height: 120px;
+    }
+    .gift-area::after {
+        right: 0px;
+        top: -113px;
+        scale: 0.09;
+    }
+    .membership-area::after{
+        top: -75px;
+        right: 0px;
+
+        
+    }
+
+
+}
+
+
+@media screen and (max-width : 350px){
+    .promo-textbox{
+        width: 65%;
+        height: 70%;
+        left: 30px;
+    }
+    .promo-main > a {
+        position: absolute;
+        top: 150px;
+        right: 30px;
+    }
+
+    #main-span{
+        font-size: 13px;
+    }
+    
+}
+
 @media screen and (max-width : 320px){
     .header{
         height: 55px;
@@ -361,16 +519,26 @@
         padding-top: 5px;
         width: 180px;
     }
+
+    .top_img{
+        width: 85%;
+    }
+
     .icons{
         padding-bottom:12px ;
     }
+   .promo-inner{
+    width: 80%;
+   }
 
-    /* #head-logo{
-        width: 147px;
-        height: auto;
-    
-    }
-    #head-logo img{
-        width: 100%;
-    } */
+   .footer-inner{
+    gap: 60px;
 }
+.footer-left p{
+    width: 250px;
+}
+
+.footer-right ul{
+    width: 250px;
+}
+}}

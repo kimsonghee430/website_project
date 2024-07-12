@@ -15,7 +15,7 @@ window.onload =function(){
 
 
       var promotion = new Swiper(".promo-inner", {
-        slidesPerView: 3,
+        slidesPerView: 1.5,
         spaceBetween: 20,
         loop: true,
 
@@ -25,22 +25,30 @@ window.onload =function(){
         },
 
         breakpoints:{
-          320:{
-              slidesPerView : 1,
-              spaceBetween: 10,
-          },
           768:{
-              slidesPerView : 2,
-              spaceBetween: 10,
-          },
-          1156:{
-              slidesPerView : 3,
-              spaceBetween: 20,
-          },
-          1920:{
-              slidesPerView : 3,
-              spaceBetween: 20,
-          },
+                slidesPerView : 3,
+                // spaceBetween: 10,
+            },
+          468:{
+                slidesPerView : 2.5,
+                // spaceBetween: 10,
+            },
+          // 320:{
+          //     slidesPerView : 1,
+          //     spaceBetween: 10,
+          // },
+          // 768:{
+          //     slidesPerView : 2,
+          //     spaceBetween: 10,
+          // },
+          // 1156:{
+          //     slidesPerView : 3,
+          //     spaceBetween: 20,
+          // },
+          // 1920:{
+          //     slidesPerView : 3,
+          //     spaceBetween: 20,
+          // },
       },
 
       });
