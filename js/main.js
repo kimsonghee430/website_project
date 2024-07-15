@@ -6,10 +6,12 @@ window.onload =function(){
           delay: 2500,
           disableOnInteraction: false,
         },
+        // loop: true,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
+
 
       });
 
@@ -52,6 +54,10 @@ window.onload =function(){
       },
 
       });
+
+      let textboxUp = document.querySelector(".promo-textbox");
+      textboxUp.addEventListener("click", function(){
+      textboxUp.classList.toggle("active")});
 
 
 }

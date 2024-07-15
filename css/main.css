@@ -68,6 +68,7 @@
 .navi{
     position: relative;
     width: 100%;
+    
     /* background-color: beige; */
 }
 
@@ -79,19 +80,49 @@
     width: 100%;
     height: 70px;
     
+    
 }
 
 .head-menu{
+    width: 100%;
     margin: auto;
+    position: relative;
+    
     /* background-color: bisque; */
 
 }
 
-.head-menu a{
-    padding: 13% 20%;
+.head-menu > a{
+    width: calc(100% / 5);
+    padding: 10%;
     font-size: 1.3rem;
     font-weight: 400;
     font-family: 'Times New Roman', Times, serif;
+}
+
+.depth2 {
+    width: 100%;
+    position: absolute;
+    display: none;
+    top: 45px;
+    left: 0;
+    /* text-align: center; */
+    /* width: px; */
+    /* height: 50px; */
+    background-color: #ffffff;
+}
+
+.depth2 li{
+    width: calc(100% / 4);
+    padding: 10px;
+}
+
+.depth2 li a{
+    padding: 10px;
+}
+
+.head-menu:hover .depth2 {
+    display: block;
 }
 
 /* 슬라이드쇼 */
@@ -102,7 +133,7 @@
     height: auto;
     margin: auto;
     overflow: hidden;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .slideshow > ul{
@@ -127,10 +158,33 @@
     height: auto;
 }
 
-.swiper-pagination{
-    
-    
+.slide320{
+    display: none;
 }
+
+.slide768{
+    display: none;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+
+    left: -242px;
+    bottom: 50px;
+}
+
+.swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    border: 3px solid #235E88 ;
+    background-color: #ffffff;
+}
+/* .swiper-pagination-bullet-active{
+    width: 12px;
+    height: 12px;
+    background-color: aquamarine;
+    border: 3px solid #235E88 ;
+} */
+    
 
 /* 프로모션 */
 
@@ -138,7 +192,7 @@
     width: 100%;
     max-width: 1210px;
     margin: auto;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 /* 프로모션 상단 */
@@ -147,7 +201,7 @@
     padding-bottom: 5%;
     /* height: 1125px; */
     position: relative;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 /* .promo-top > img{
@@ -160,7 +214,7 @@
 .top_img{
     width: 40%;
     margin: 8% auto;
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
 }
 .top_img img{
     width: 100%;
@@ -175,7 +229,7 @@
     display: flex;
     justify-content: center;
     gap: 25px;
-    background-color: turquoise;
+    /* background-color: turquoise; */
 }
 
 .promo-textbox{
@@ -183,16 +237,22 @@
     width: 40%;
     /* height: auto; */
     padding: 4%;
+    background-color: #fff;
     border: 1px solid #333;
     box-shadow: 0 0 5px #333;
     /* min-width: 10%; */
 }
+
+
 
 .promo-textbox h3{
     font-size: 50px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 35px;
+}
+.promo-textbox.active{
+    z-index: 99;
 }
 
 .promo-textbox p{
@@ -214,6 +274,7 @@
 
 #main-span{
     display: none;
+    /* background-color: antiquewhite; */
 }
 
 .promo-top > a{
@@ -223,7 +284,7 @@
     font-size: 18px;
     font-weight: bold;
     padding: 1% 2%;
-    background-color: beige;
+    /* background-color: beige; */
 }
 
 /* 프로모션 하단 */
@@ -250,7 +311,7 @@
     width: 100%;
  max-width: 1210px;
  margin: auto;
- background-color: #80a4db;
+ /* background-color: #80a4db; */
 }
 
 
@@ -268,12 +329,13 @@
     display: block;
     text-align: center;
     font-size: 1.2rem;
+    font-weight: 500;
     width: 100%;
     padding: 3% 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
 }
 
 .promo-inner ul li a img{
@@ -285,7 +347,7 @@
     position: absolute;
     width: 200px;
     height: 200px;
-    scale: 0.3;
+    scale: 30%;
     color: transparent;
     top: 33%;
     left: -8%;
@@ -301,7 +363,7 @@
     position: absolute;
     width: 200px;
     height: 200px;
-    scale: 0.3;
+    scale: 30%;
     color: transparent;
     top: 33%;
     right: -8%;
@@ -321,7 +383,7 @@
     margin-bottom: 50px;
     display: flex;
     gap: 20px;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
 }
 
 
@@ -371,7 +433,7 @@
     height: 416px;
     top: -59px;
     right: -160px;
-    scale: 0.25;
+    scale: 25%;
     background: url("../images/gift_lmg.png");
 }
 
@@ -394,8 +456,8 @@
     height: 348px;
     top: -15px;
     left: -133px;
-    scale: 0.25;
-    background: url(../images/membership_img.png);
+    scale: 25%;
+    background: url("../images/membership_img.png");
 }
 
 /* 하단 */
