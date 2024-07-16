@@ -27,11 +27,24 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/resposive.css" />
     <!-- Swiper JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <title>JILLSTUART</title>
   </head>
   <body>
+    <!-- top버튼 -->
+    <div class="top-btn">
+      <a href="#" id="bt-img">
+        <img src="images/btn-up.png" alt="위로가기">
+      </a>
+      <a href="#" id="top_shopping">
+        <img src="images/shopping_bag.png" alt="장바구니">
+      </a>
+      <a href="#" id="top_login">
+        <img src="images/bt-user.png" alt="로그인/마이페이지">
+      </a>
+    </div>
     <!-- 전체 레이아웃 -->
     <div class="wrap">
       <!-- 헤더(고정) -->
@@ -43,7 +56,18 @@
           <div class="icons">
             <a href="#"><img src="images/search.png" alt="찾기" /></a>
             <a href="#"><img src="images/shopping_bag.png" alt="장바구니" /></a>
-            <a href="#"><img src="images/menu_bar.png" alt="메뉴바" /></a>
+            <a href="#">
+              <img src="images/menu_bar.png" alt="메뉴바" />
+              <ul class="menu_bar_list">
+                <b>ITEM CATEGORIES</b>
+                <li><a href="#">BAG</a></li>
+                <li><a href="#">WALLET</a></li>
+                <li><a href="#">ACCESSARIES</a></li>
+                <li><a href="#">CLOTHES</a></li>
+                <li><a href="#">PROMOTION</a></li>
+                <li><a href="#" class="mypage"><b>MY PAGE</b></a></li>
+              </ul>
+            </a>
           </div>
           <nav class="navi">
             <ul class="menu">

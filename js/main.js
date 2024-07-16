@@ -1,4 +1,23 @@
-window.onload =function(){
+window.onload = function(){
+  // top버튼 스크롤 기능=======================
+  const topBtn = document.getElementById("bt-img");
+  topBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    console.log(window.scrollY);
+    if (window.scrollY == 0) {
+      window.scrollTo({
+        top: 2777,
+        behavior: "smooth",
+      });
+    } 
+    else {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  });
+  // swiper
     const swiper = new Swiper(".slideshow", {
         
         centeredSlides: true,
@@ -59,5 +78,25 @@ window.onload =function(){
       textboxUp.addEventListener("click", function(){
       textboxUp.classList.toggle("active")});
 
-
+      // let neviDown = document.querySelector(".head-menu");
+      // let depth = document.querySelector(".depth2")
+      // neviDown.addEventListener("click", function(){
+      //   depth.classList.toggle("hover")});
 }
+
+
+$(document).ready(function(){
+  $(".head-menu").mouseover(function(){
+    $(this).find(".depth2").stop().slideDown(0)
+  })
+
+
+  $(".head-menu").mouseout(function(){
+    // console.log(this);
+    $(this).find(".depth2").slideUp(0)
+  })
+})
+
+
+   
+ 

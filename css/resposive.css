@@ -243,10 +243,32 @@
 }
 
 @media screen and (max-width : 768px){
-    /* 헤더 네비 */
-    .head-menu a{
-        padding: 15% 10%;
+    /* top버튼 */
+    .top-btn{
+        width: 30px;
+        height: auto;
     }
+    .top-btn a{
+        width: 20px;
+        height: 20px;
+        margin: 8px;
+    }
+    /* 헤더 네비 */
+    .head-menu > a{
+        /* padding: 15% 10%; */
+        font-size: 20px;
+    }
+    .head-menu:nth-child(3) > a{
+        margin: 0 -8px;
+    }
+
+    /* .head-menu:nth-child(4) > a{
+        margin: 0 15px;
+    }
+    .head-menu:nth-child(5) > a{
+        margin: 0 -10px;
+    } */
+
     .top_img{
         width: 70%;
     }
@@ -275,7 +297,16 @@
         top: 16px;
         left: 78px;
     }
-
+    .head-menu > a{
+        /* padding: 15% 10%; */
+        font-size: 18px;
+    }
+    .head-menu:nth-child(3) > a{
+        margin: 0 -10px;
+    }
+    .depth2 li a{
+        font-size: 15px;
+    }
    
 
     #main-span{
@@ -362,6 +393,10 @@
     .head-menu a{
         font-size: 16px;
     }
+
+    .depth2{
+        top: 35px;
+    }
 }
 
 @media screen and (max-width : 600px){
@@ -407,6 +442,18 @@
 
 
 @media screen and (max-width : 562px){
+    .head-menu > a{
+        /* padding: 15% 10%; */
+        font-size: 14px;
+        /* padding: none; */
+    }
+    .head-menu:nth-child(3) > a{
+        margin: 0 -10px;
+    }
+
+    .depth2 li a{
+        font-size: 13px;
+    }
 
     .promo-main{
         height: 540px;
@@ -448,6 +495,9 @@
 }
 
 @media screen and (max-width : 460px){
+    .top-btn{
+        display: none;
+    }
     .header{
         height: 100px;
     }
