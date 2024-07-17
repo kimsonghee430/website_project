@@ -166,6 +166,10 @@
         font-size: 16px;
     }
     
+    .ranking-list a{
+        min-width: 226px;
+    }
+
     
     /* 서비스 구역 */
      .service-wrap{
@@ -403,6 +407,9 @@
     .promo-items a span {
         font-size: 14px;
     }
+    .ranking-list a span{
+        font-size: 14px;
+    }
 
     .swiper-button-prev{
         scale: 20%;
@@ -491,6 +498,9 @@
 
     #main-span{
         font-size: 15px;
+    }
+    .ranking-list a span br{
+        display: block;
     }
 }
 

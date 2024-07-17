@@ -41,8 +41,8 @@ window.onload = function(){
         loop: true,
 
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".promo-slide .swiper-button-next",
+          prevEl: ".promo-slide .swiper-button-prev",
         },
 
         breakpoints:{
@@ -73,6 +73,37 @@ window.onload = function(){
       },
 
       });
+
+      var topRank = new Swiper(".rank-inner", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        loop: true,
+
+        navigation: {
+          nextEl: ".top-rank-slide .swiper-button-next",
+          prevEl: ".top-rank-slide .swiper-button-prev",
+        },
+
+        breakpoints:{
+        //   1210:{
+        //     slidesPerView : 3,
+        //     // spaceBetween: 10,
+        // },
+        468:{
+          slidesPerView : 3,
+          // spaceBetween: 10,
+      },
+          768:{
+            slidesPerView :3,
+            // spaceBetween: 10,
+        },
+     
+
+      },
+
+      });
+
+
 
       let textboxUp = document.querySelector(".promo-textbox");
       textboxUp.addEventListener("click", function(){
