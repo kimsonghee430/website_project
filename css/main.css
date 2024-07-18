@@ -18,7 +18,7 @@
     transition: top 0.5s;
 
     right: 30px;
-    bottom: 400px;
+    bottom: 280px;
     width: 50px;
     height: auto;
     display: flex;
@@ -29,7 +29,13 @@
     border-radius: 10px;
     background-color: #ffffff;
     z-index: 99999;
+    opacity: 0.3;
+    transition: all 0.5s;
 }
+.top-btn.on{
+    opacity: 1;
+}
+
 .top-btn a{
     width: 30px;
     height: 30px;
@@ -107,7 +113,7 @@
     /* box-shadow: 0 1px 8px #bdbdbd; */
     box-shadow: -5px 5px 5px -5px #686868;
     position: absolute;
-    top: 100%;
+    top: 99%;
     right: 0%;
     width: 43%;
     background-color: #fff;
@@ -349,6 +355,10 @@
     display: none;
     text-align: right;
     /* background-color: antiquewhite; */
+}
+
+.line-change3{
+    display: none;
 }
 
 .promo-top > a{
@@ -675,6 +685,7 @@ transform: translate(-50%, -50%); */
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-evenly;
+    padding: 0 20px;
 
 }
 

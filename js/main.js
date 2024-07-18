@@ -127,6 +127,14 @@ window.onload = function(){
       const menuIcon = document.querySelector(".menubar_icon")
       menuIcon.addEventListener("click", function(){
       menuActive.classList.toggle("active")});
+
+      let buttonOpacity = document.querySelector(".top-btn")
+      buttonOpacity.addEventListener("mouseover",function(){
+        buttonOpacity.classList.add("on")
+      })
+      buttonOpacity.addEventListener("mouseout",function(){
+        buttonOpacity.classList.remove("on")
+      })
 }
 
 
