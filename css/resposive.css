@@ -147,14 +147,24 @@
     }
 
 }
+@media screen and (max-width : 800px){
+    /* 프로모션 메인탑 텍스트박스 */
+    .promo-textbox p{
+        font-size: 19px;
+    }
+    .promo-textbox h3{
+        font-size: 29px;
+        margin-bottom: 20px;
+    }
+}
 
 @media screen and (max-width : 768px){
     /* 프로모션 메인탑 텍스트박스 */
     .promo-textbox p{
-        font-size: 18px;
+        font-size: 17px;
     }
     .promo-textbox h3{
-        font-size: 28px;
+        font-size: 26px;
         margin-bottom: 20px;
     }
     .promo-top > a{
@@ -273,9 +283,6 @@
         margin: 0 -10px;
     } */
 
-    .top_img{
-        width: 70%;
-    }
     .slide320{
         display: none;
     }
@@ -284,6 +291,12 @@
     }
     .slide1920{
         display: none;
+    }
+    .top_img{
+        width: 70%;
+    }
+    .rank-main-logo{
+        width: 60%;
     }
 }
 
@@ -301,6 +314,7 @@
         top: 16px;
         left: 78px;
     }
+
     .head-menu > a{
         /* padding: 15% 10%; */
         font-size: 18px;
@@ -411,16 +425,28 @@
         font-size: 14px;
     }
 
-    .swiper-button-prev{
+    .promo-bottom .swiper-button-prev{
         scale: 20%;
         left: -70px;
         /* top: 26%; */
     }
-    .swiper-button-next{
+    .promo-bottom .swiper-button-next{
         scale: 20%;
         right: -70px;
         /* top: 26%; */
     }
+
+    .top-rank-area .swiper-button-prev{
+        scale: 20%;
+        left: -70px;
+        top: 10%;
+    }
+    .top-rank-area .swiper-button-next{
+        scale: 20%;
+        right: -70px;
+        top: 10%;
+    }
+
 
     .footer{
         height: auto;
@@ -499,8 +525,27 @@
     #main-span{
         font-size: 15px;
     }
+    .top-rank-area {
+        margin-top: 40px;
+    }
+    
+    .rank-main-logo{
+        width: 70%;
+        margin: 0px auto 40px;
+    }
+
     .ranking-list a span br{
         display: block;
+    }
+    .top-rank-area .swiper-button-prev{
+        scale: 15%;
+        /* left: -70px;
+        top: 10%; */
+    }
+    .top-rank-area .swiper-button-next{
+        scale: 15%;
+        /* right: -70px;
+        top: 10%; */
     }
 }
 
@@ -557,7 +602,10 @@
     .navi{
         display: none;
     }
-}
+
+    .menu_bar_list.active{
+        display: flex;
+    }
 
 @media screen and (max-width : 420px){
 
@@ -596,6 +644,16 @@
         height: 430px;
     }
 
+    .top-rank-area .swiper-button-prev{
+        scale: 13%;
+        left: -80px;
+        top: 0%;
+    }
+    .top-rank-area .swiper-button-next{
+        scale: 13%;
+        right: -80px;
+        top: 0%;
+    }
 }
 
 @media screen and (max-width : 360px){
